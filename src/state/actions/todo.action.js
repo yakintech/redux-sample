@@ -5,24 +5,31 @@ export const todoCreated = (data = {}) => {
     }
 }
 
-export const todoBulkinsert = (data = []) =>{
-    console.log('bulkaction',data)
+export const todoBulkinsert = (data = []) => {
+    console.log('bulkaction', data)
     return {
-        type:'TODO_BULKINSERT',
-        payload:data
+        type: 'TODO_BULKINSERT',
+        payload: data
     }
 }
 
 export const todoDeleted = (data = '') => {
     return {
-        type:'TODO_DELETED',
-        payload:data
+        type: 'TODO_DELETED',
+        payload: data
     }
 }
 
-export const todos = (data = [])=>{
-    return{
-        type:'TODOS',
-        payload:data
+export const todos = (data = []) => {
+    return {
+        type: 'TODOS',
+        payload: data
     }
+}
+
+
+
+
+function KDVHesap(x,y = 1.18) {
+
 }

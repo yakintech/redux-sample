@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
-import { todoCreated } from '../state/actions/todo.action'
+import { todoCreated, todoDeleted } from '../state/actions/todo.action'
 
 
 function TodoCreate(props) {
@@ -39,7 +39,6 @@ const mapDispatchToProps = (dispatch) => {
         onCreate:(data)=>{
             dispatch(todoCreated(data))
         }
-    }
 }
 
 export default connect(mapStateToProps,mapDispatchToProps)(TodoCreate)
