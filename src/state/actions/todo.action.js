@@ -5,6 +5,14 @@ export const todoCreated = (data = {}) => {
     }
 }
 
+export const todoBulkinsert = (data = []) =>{
+    console.log('bulkaction',data)
+    return {
+        type:'TODO_BULKINSERT',
+        payload:data
+    }
+}
+
 export const todoDeleted = (data = '') => {
     return {
         type:'TODO_DELETED',

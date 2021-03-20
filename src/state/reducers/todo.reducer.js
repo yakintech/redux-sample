@@ -11,6 +11,10 @@ const TodoReducer = (state = [], action) => {
         const data = state.filter(q => q.name != payload);
         return data;
     }
+    else if(type === 'TODO_BULKINSERT'){
+        const data = [...state,...payload];
+        return data;
+    }
     else {
         return state;
     }
